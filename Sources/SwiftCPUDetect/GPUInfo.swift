@@ -69,7 +69,7 @@ import Metal
     }
     #endif
     
-    class func mainMetalGPU() -> GPU?{
+    public class func mainMetalGPU() -> GPU?{
         
         guard let gpu = MTLCreateSystemDefaultDevice() else{
             return nil
