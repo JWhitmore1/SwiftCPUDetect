@@ -26,12 +26,12 @@ open class GeneralPrinter {
     
     open class func print( _ str: Any){
         if enabled{
-            Swift.print("\(prefix) \(str)")
+//             Swift.print("\(prefix) \(str)")
         }
     }
     
     open class func errorPrint(_ str: Any){
-        GeneralPrinter.print("\(errorPrefix) \(str)")
+//         GeneralPrinter.print("\(errorPrefix) \(str)")
     }
 }
 
