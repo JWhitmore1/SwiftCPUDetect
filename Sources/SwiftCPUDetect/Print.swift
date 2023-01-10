@@ -15,7 +15,7 @@ import Foundation
 
 ///This class manages prints
 open class GeneralPrinter {
-    public static var enabled: Bool = true
+    public static var enabled: Bool = false
     open class var prefix: String{
         return ""
     }
