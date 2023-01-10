@@ -41,8 +41,8 @@ public extension CPUInfo{
     }
     
     #if !os(Linux) || arch(x86_64) || arch(i386)
-    ///The ammount L1 Data cache
-    static func l1DataCacheAmmount() -> UInt?{
+    ///The amount L1 Data cache
+    static func l1DataCacheAmount() -> UInt?{
         #if !os(Linux)
         return Reference.l1dcachesize
         #else
@@ -50,8 +50,8 @@ public extension CPUInfo{
         #endif
     }
     
-    ///The ammount L1 Instruction cache
-    static func l1InstructionCacheAmmount() -> UInt?{
+    ///The amount L1 Instruction cache
+    static func l1InstructionCacheAmount() -> UInt?{
         #if !os(Linux)
         return Reference.l1icachesize
         #else
@@ -59,8 +59,8 @@ public extension CPUInfo{
         #endif
     }
     
-    ///The ammount L2 cache
-    static func l2CacheAmmount() -> UInt?{
+    ///The amount L2 cache
+    static func l2CacheAmount() -> UInt?{
         #if !os(Linux)
         return Reference.l2cachesize
         #else
@@ -70,8 +70,8 @@ public extension CPUInfo{
     #endif
     
     #if arch(x86_64) || arch(i386)
-    ///The ammount L3 cache
-    static func l3CacheAmmount() -> UInt?{
+    ///The amount L3 cache
+    static func l3CacheAmount() -> UInt?{
         #if !os(Linux)
         return Reference.l3cachesize
         #else
@@ -246,8 +246,8 @@ public final class HWInfo{
         
     }
     
-    ///Gets the current ammount of RAM inside the system
-    public static func ramAmmount() -> UInt?{
+    ///Gets the current amount of RAM inside the system
+    public static func ramAmount() -> UInt?{
         #if !os(Linux)
         return Sysctl.HW.memsize
         #else
